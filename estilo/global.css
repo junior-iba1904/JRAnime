@@ -1,0 +1,325 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	text-transform: capitalize;
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*Barra de navegacion*/
+nav{
+    background-color:black ;
+    height: 100px;
+    width: 100%;
+	position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
+	z-index: 1000;
+}
+
+.enlace{
+	position: absolute;
+	padding: 20px 50px;
+}
+
+.logo{
+	margin-top: 8px;
+	height: 40px;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 10px 20px;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 18px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+li a:hover{
+	background: #A2219D;
+	transition: .5s;
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: #A2219D;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+
+
+.buscar{
+	padding: 0px;
+	float: right;
+	margin-right: 15px;
+}
+
+
+.buscar input{
+	width: 0px;
+	height: 40px;
+	padding: 0 20px;
+	font-size: 18px;
+	color: black;
+	outline: none;
+	border-radius: 30px;
+	transition: all 0.6s ease;
+}
+
+.btn{
+	position: absolute;
+	top: 23px;
+	right: 35px;
+	width: 55px;
+	height: 55px;
+	line-height: 60px;
+	background: #d50fbd;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.buscar:hover input{
+	width: 240px;
+}
+
+.buscar input:focus{
+	width: 240px;
+}
+
+/*footer*/
+
+footer{
+	width: 100%;
+	padding: 30px;
+	text-align: center;
+	background: #A2219D;
+}
+
+footer ul{
+	padding: 20px 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+footer ul li{
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+footer ul li:hover{
+	color: white;
+}
+
+
+@media(max-width: 400px){
+	#cuerpo{
+		width: 1100px;
+		height: 3800px;
+		margin-top: 150px;
+	}
+
+	.enlace{
+		padding: 20px 10px 10px 30px;
+	}
+
+	.logo{
+		width: 250px;
+		height: 90px;
+	}
+
+	footer{
+		width: 1100px;
+		height: 300px;
+		font-size: 25px;
+	}
+
+	footer ul{
+		position: unset;
+		margin-top: 20px;
+	}
+
+	.slide img{
+		height: 580px;
+		width: 1100px;
+	}
+
+	.navigation-manual{
+		margin-left: 450px;
+		margin-top: 500px;
+	}
+
+	.navigation-auto{
+		margin-left: 450px;
+		margin-top: 500px;
+	}
+
+	.checkbtn{
+		display: block;
+		font-size: 100px;
+		margin-top: 20px;
+	}
+	nav ul{
+		margin-top: 150px;
+		position: fixed;
+		width: 100%;
+		height: 200vh;
+		background: #A2219D;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		z-index: -1000;
+	}
+
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		/*line-height: 30px;*/
+	}
+
+	nav ul li a{
+		font-size: 30px;
+		padding: 40px 400px;
+	}
+
+	li a:hover{
+		background: black;
+		color: white;
+	}
+
+	#check:checked ~ ul{
+		left: 0%;
+	}
+
+	nav{
+		width: 1100px;
+		height: 150px;
+	}
+
+	.slider{
+		position: unset;
+	}
+
+	.btn{
+		margin-top: 570px;
+		margin-right: 370px;
+		width: 75px;
+		height: 75px;
+		font-size: 30px;
+	}
+
+	.btn i{
+		margin-top: 20px;
+	}
+
+	.buscar{
+		float: none;
+		margin-left: 390px;
+	}
+
+	.buscar:hover input{
+		width: 300px;
+	}
+	
+	.buscar input:focus{
+		width: 300px;
+	}
+
+	.buscar input{
+		margin-right: 420px;
+		width: 300px;
+		height: 50px;
+		font-size: 30px;
+	}
+
+	.interno button{
+		margin: 350px 830px;
+		font-size: 25px;
+	}
+
+	.seccion{
+		height: 900px;
+	}
+
+	.card{
+		width: 730px;
+		height: 700px;
+	}
+
+	.card img{
+		width: 700px;
+		height: 700px;
+	}
+
+	.card figcaption{
+		width: 700px;
+		transform: translateY(calc(100% - 4rem));
+	}
+
+	.card-sip{
+		width: 700px;
+		height: 350px;
+		font-size: 30px;
+		margin-top: 0%;
+	}
+
+	.card figcaption h3{
+		font-size: 40px;
+	}
+
+	figcaption p{
+		font-size: 30px;
+		margin-top: 30px;
+	}
+
+	.btn-card{
+		margin-top: 380px;
+		font-size: 30px;
+	}
+
+	.seccion .btn-sec{
+		margin-left: 800px;
+		margin-top: 25px;
+		font-size: 25px;
+	}
+
+	.seccion h1{
+		font-size: 30px;
+	}
+
+
+
+}
